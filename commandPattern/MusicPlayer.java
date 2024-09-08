@@ -1,18 +1,19 @@
 package commandPattern;
 
-public class Tv implements Device{
-
-    public String switchOn() {
-        return "Tv is switched-on!";
+public class MusicPlayer implements Device{
+    
+    public String switchOn(){
+        return "Music player on. Playing playlist";
     }
 
     public String switchOff(){
-        return "Tv is switched-off";
+        return "Music player off. Stopping music";
     }
 
     public String increase(){
         return "Volume increased";
     }
+
     public String decrease(){
         return "Volume decreased";
     }

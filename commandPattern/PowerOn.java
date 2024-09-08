@@ -2,13 +2,13 @@ package commandPattern;
 
 public class PowerOn implements Command {
 
-    private Tv tv;
-    public PowerOn(Tv tv){
-        this.tv = tv;
+    private Device device;
+    public PowerOn(Device device){
+        this.device = device;
     }
     @Override
     public String execute() {
-        return tv.switchOn();
+        return device.switchOn();
     }
 
 }
